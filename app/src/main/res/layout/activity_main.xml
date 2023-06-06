@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--背景图-->
+    <ImageView
+        android:id="@+id/main_imageView_backg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/bj_1000x1000"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+<!--签到-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/qiandao"
+        android:layout_width="130dp"
+        android:layout_height="120dp"
+        android:alpha="0.75"
+        app:cardBackgroundColor="#ffffff"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/main_imageView_backg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.259"
+        tools:ignore="MissingConstraints,OnClick"
+        android:onClick="qiandao"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_calendar_today_24"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="@string/qiandao"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:text="2023-4-7"
+            android:textSize="16sp"
+            />
+    </androidx.cardview.widget.CardView>
+
+<!--签到成功-->
+    <androidx.cardview.widget.CardView
+        android:visibility="gone"
+        android:id="@+id/qiandaochenggong"
+        android:layout_width="130dp"
+        android:layout_height="120dp"
+        android:alpha="0.75"
+        app:cardBackgroundColor="#ffffff"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/main_imageView_backg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.259"
+        tools:ignore="MissingConstraints"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_emoji_emotions_24"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="18dp"
+            android:text="@string/jinbi"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            />
+        <TextView
+            android:id="@+id/goldnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+            android:text="@string/num10"
+            android:textColor="@color/gold"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:text="@string/stryiqiandao"
+            android:textSize="14sp"
+            android:layout_marginEnd="18dp"
+            />
+        <TextView
+            android:id="@+id/qiandaodaynum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:text="@string/qiandaotianshu"
+            android:textSize="14sp"
+            android:layout_marginStart="20dp"
+
+            />
+
+
+    </androidx.cardview.widget.CardView>
+<!--学习-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="100dp"
+        android:alpha="0.8"
+        android:onClick="learn"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/main_imageView_backg"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/main_imageView_backg"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints">
+        <!--学习-->
+        <TextView
+            android:id="@+id/learn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/learn"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+<!--复习-->
+    <androidx.cardview.widget.CardView
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="100dp"
+        android:alpha="0.8"
+        android:onClick="fuxi"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/cardView"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints,OnClick">
+        <!--复习-->
+        <TextView
+            android:id="@+id/fuxi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/fuxi"
+            android:textSize="22sp"
+            android:textStyle="bold"
+
+            />
+
+    </androidx.cardview.widget.CardView>
+
+
+<!--鸡汤-->
+    <TextView
+        android:id="@+id/dayday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/daydayjitang"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/qiandao"
+        tools:ignore="MissingConstraints" />
+
+<!--个人信息-->
+    <!--book-->
+
+    <ImageButton
+        android:id="@+id/person"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:alpha="0.5"
+        android:background="@drawable/circle_bg"
+        android:onClick="person"
+        android:scaleType="centerCrop"
+        android:src="@drawable/person"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.977"
+        tools:ignore="MissingConstraints" />
+
+    <!--图表-->
+    <ImageButton
+        android:id="@+id/word"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="30dp"
+        android:alpha="0.5"
+        android:background="@drawable/circle_bg"
+        android:onClick="book"
+        android:scaleType="centerCrop"
+        android:src="@drawable/book"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.977"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/chart"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="30dp"
+        android:alpha="0.5"
+        android:background="@drawable/circle_bg"
+        android:onClick="chart"
+        android:scaleType="centerCrop"
+        android:src="@drawable/chart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.977"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:alpha="0.75"
+        app:cardBackgroundColor="#ffffff"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/main_imageView_backg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:text="鹅币:" />
+        <TextView
+            android:id="@+id/qiebi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="50dp"
+            android:text="0" />
+
+        <ImageView
+            android:layout_width="26dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/qie" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

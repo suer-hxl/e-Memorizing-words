@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="qiandao">签到</string>
+    <string name="learn">学习</string>
+    <string name="fuxi">复习</string>
+    <string name="daydayjitang">每天一句正能量</string>
+    <string name="jinbi">金币+</string>
+    <string name="num10">10</string>
+    <string name="qiandaotianshu">xx天</string>
+    <string name="stryiqiandao">已签到:</string>
+</resources>

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fuxi">
+
+<!--背景图层-->
+    <ImageView
+        android:id="@+id/fuxi_imageView"
+        android:onClick="pronounce"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="1"
+        android:background="#9dadbe"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:layout_width="36dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.038"
+        app:srcCompat="?attr/actionModeCloseDrawable"
+        android:onClick="fuxi_back"
+        />
+<!--收藏-->
+    <ImageView
+        android:id="@+id/f_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_baseline_star_border_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.74"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.038"
+        android:onClick="f_strat"
+
+        />
+<!--删除-->
+    <ImageView
+        android:id="@+id/f_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_baseline_delete_start_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.84"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.038"
+
+        android:onClick="f_delete"
+
+        />
+<!--菜单-->
+    <ImageView
+        android:id="@+id/f_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_baseline_menu_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.94"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.038"
+        android:onClick="f_set"
+
+
+        />
+<!--单词展示-->
+    <!--音频播放-->
+
+    <TextView
+        android:id="@+id/show_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="展示单词"
+        android:textSize="40sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.14" />
+
+    <!--单词展示-->
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_baseline_adiou_24"
+        android:onClick="pronounce"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.234" />
+
+    <TextView
+        android:id="@+id/show_word_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="展示单词音标"
+        android:textSize="14sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.616"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.24" />
+    <TextView
+        android:id="@+id/fuxi_pr_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="英音:"
+        android:textSize="14sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.42"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.24" />
+    <androidx.cardview.widget.CardView
+        android:onClick="fuxi_renshi"
+        app:cardElevation="2dp"
+
+        android:id="@+id/renshi"
+        android:alpha="0.2"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:clickable="true"
+        android:visibility="visible"
+        app:cardCornerRadius="20dp"
+
+        android:layout_marginTop="180dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/burenshi"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView7">
+
+        <TextView
+            android:id="@+id/txex_renshi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="认识"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+             />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fuxi_next"
+
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="180dp"
+        android:alpha="0.2"
+        android:clickable="true"
+        android:onClick="Nxet"
+        android:visibility="gone"
+
+        app:cardCornerRadius="20dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView7">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+             />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:onClick="fuxi_burenshi"
+
+
+        app:cardElevation="2dp"
+
+        android:id="@+id/burenshi"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:clickable="true"
+        android:visibility="visible"
+        app:cardCornerRadius="20dp"
+        android:alpha="0.2"
+        android:layout_marginTop="180dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/renshi"
+        app:layout_constraintTop_toBottomOf="@+id/cardView7">
+        <TextView
+            android:id="@+id/txex_burenshi"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不认识"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center" />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/cardView7"
+        android:layout_width="360dp"
+        android:layout_height="200dp"
+        android:alpha="0.3"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.44"
+        tools:ignore="MissingConstraints" >
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/word_text"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="单词"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:ellipsize="end"
+
+            />
+
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

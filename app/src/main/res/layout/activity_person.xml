@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--    背景-->
+    <!--底部-->
+    <ImageView
+        android:id="@+id/person_bj_jianbian"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F6D64B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view123456"
+        android:layout_width="360dp"
+        android:layout_height="220dp"
+        android:alpha="0.9"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/person_bj_jianbian"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.96"
+        tools:ignore="MissingConstraints" >
+        <Switch
+            android:id="@+id/us"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="UseSwitchCompatOrMaterialXml"
+            android:text="美音"
+            android:textSize="20sp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="80dp"
+            android:onClick="us"
+            />
+        <Switch
+            android:id="@+id/uk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="UseSwitchCompatOrMaterialXml"
+            android:text="英音"
+            android:textSize="20sp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:onClick="uk"
+            />
+        <Switch
+            android:id="@+id/random_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="UseSwitchCompatOrMaterialXml"
+            android:text="随机背景"
+            android:textSize="20sp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="130dp"
+            android:onClick="back_ground"
+            />
+        <Switch
+            android:id="@+id/five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="UseSwitchCompatOrMaterialXml"
+            android:text="单次学习5"
+            android:textSize="20sp"
+            android:layout_marginTop="80dp"
+            android:layout_marginStart="200dp"
+            android:onClick="five"
+            />
+        <Switch
+            android:id="@+id/ten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="UseSwitchCompatOrMaterialXml"
+            android:text="单次学习10"
+            android:textSize="20sp"
+            android:onClick="ten"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="200dp"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <!--中部-->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView9"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:alpha="0.9"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/card_view123456"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.96"
+        tools:ignore="MissingConstraints"
+
+        >
+        <TextView
+            android:id="@+id/yu_e"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="余额:"
+            android:gravity="center"
+            />
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView10"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:alpha="0.9"
+        app:cardCornerRadius="110dp"
+        app:cardElevation="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/eeeee" />
+
+    </androidx.cardview.widget.CardView>
+
+    <!--使用天数-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView11"
+        android:layout_width="200dp"
+        android:layout_height="36dp"
+        app:cardBackgroundColor="#FAF6D539"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="200dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardView10"
+        tools:ignore="MissingConstraints"
+
+        >
+
+        <TextView
+            android:id="@+id/total_day"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="至今已使用:xx天" />
+
+    </androidx.cardview.widget.CardView>
+
+    <!--返回按钮-->
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:gravity="center"
+        android:text="昵称:username"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardView10" />
+
+    <TextView
+        android:id="@+id/account"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:gravity="center"
+        android:text="账号:username"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardView10" />
+
+    <ImageView
+        android:id="@+id/back_person"
+        android:layout_width="36dp"
+        android:layout_height="30dp"
+        android:onClick="back_main"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.038"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

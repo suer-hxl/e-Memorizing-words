@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/project/java/ReEnglish/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.123" />
+        <entry key="..\:/project/java/ReEnglish/app/src/main/res/drawable/background.xml" value="0.136" />
+        <entry key="..\:/project/java/ReEnglish/app/src/main/res/drawable/book.xml" value="0.1105" />
+        <entry key="..\:/project/java/ReEnglish/app/src/main/res/drawable/cardview_stroke.xml" value="0.1915" />
+        <entry key="..\:/project/java/ReEnglish/app/src/main/res/drawable/chart.xml" value="0.1" />
+        <entry key="..\:/project/java/ReEnglish/app/src/main/res/drawable/circle_bg.xml" value="0.1085" />
+        <entry key="..\:/project/java/ReEnglish/app/src/main/res/drawable/f_end.xml" value="0.259" />
+        <entry key="..\:/project/java/ReEnglish/app/src/main/res/drawable/home.xml" value="0.2265" />
+        <entry key="..\:/project/java/ReEnglish/app/src/main/res/drawable/ic_baseline_adiou_24.xml" value="0.259" />
+        <entry key="..\:/project/java/ReEnglish/app/src/main/res/drawable/ic_baseline_calendar_today_24.xml" value="0.123" />
+        <entry key="..\:/project/java/ReEnglish/app/src/main/res/drawable/ic_baseline_delete_start_24.xml" value="0.259" />
+        <entry key="..\:/project/java/ReEnglish/app/src/main/res/drawable/ic_baseline_delete_start_24_g.xml" value="0.145" />
+        <entry key="..\:/project/java/ReEnglish/app/src/main/res/drawable/ic_baseline_emoji_emotions_24.xml" value="0.123" />
+        <entry key="..\:/project/java/ReEnglish/app/src/main/res/drawable/ic_baseline_menu_24.xml" value="0.259" />
+        <entry key="..\:/project/java/ReEnglish/app/src/main/res/drawable/ic_baseline_menu_24_g.xml" value="0.145" />
+        <entry key="..\:/project/java/ReEnglish/app/src/main/res/drawable/ic_baseline_star_24.xml" value="0.259" />
+        <entry key="..\:/project/java/ReEnglish/app/src/main/res/drawable/ic_baseline_star_border_24.xml" value="0.134" />
+        <entry key="..\:/project/java/ReEnglish/app/src/main/res/drawable/ic_launcher_background.xml" value="0.123" />
+        <entry key="..\:/project/java/ReEnglish/app/src/main/res/drawable/person.xml" value="0.123" />
+        <entry key="..\:/project/java/ReEnglish/app/src/main/res/drawable/selector_cardview.xml" value="0.1" />
+        <entry key="..\:/project/java/ReEnglish/app/src/main/res/drawable/splash_image.xml" value="0.1" />
+        <entry key="..\:/project/java/ReEnglish/app/src/main/res/drawable/splash_screen.xml" value="0.144" />
+        <entry key="..\:/project/java/ReEnglish/app/src/main/res/drawable/word.xml" value="0.123" />
+        <entry key="..\:/project/java/ReEnglish/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.1251700680272109" />
+        <entry key="..\:/project/java/ReEnglish/app/src/main/res/layout/activity_book.xml" value="0.2" />
+        <entry key="..\:/project/java/ReEnglish/app/src/main/res/layout/activity_chart.xml" value="0.264" />
+        <entry key="..\:/project/java/ReEnglish/app/src/main/res/layout/activity_fuxi.xml" value="0.2" />
+        <entry key="..\:/project/java/ReEnglish/app/src/main/res/layout/activity_leran.xml" value="0.264" />
+        <entry key="..\:/project/java/ReEnglish/app/src/main/res/layout/activity_login.xml" value="0.25364583333333335" />
+        <entry key="..\:/project/java/ReEnglish/app/src/main/res/layout/activity_main.xml" value="0.47327502429543244" />
+        <entry key="..\:/project/java/ReEnglish/app/src/main/res/layout/activity_person.xml" value="0.264" />
+        <entry key="..\:/project/java/ReEnglish/app/src/main/res/layout/activity_splash.xml" value="0.25364583333333335" />
+        <entry key="..\:/project/java/ReEnglish/app/src/main/res/layout/activity_zjy.xml" value="0.25364583333333335" />
+        <entry key="..\:/project/java/ReEnglish/app/src/main/res/layout/book.xml" value="0.26510416666666664" />
+        <entry key="..\:/project/java/ReEnglish/app/src/main/res/layout/chart.xml" value="0.26510416666666664" />
+        <entry key="..\:/project/java/ReEnglish/app/src/main/res/layout/home.xml" value="0.1125" />
+        <entry key="..\:/project/java/ReEnglish/app/src/main/res/layout/learn.xml" value="0.1125" />
+        <entry key="..\:/project/java/ReEnglish/app/src/main/res/layout/login.xml" value="0.25364583333333335" />
+        <entry key="..\:/project/java/ReEnglish/app/src/main/res/layout/person.xml" value="0.26510416666666664" />
+        <entry key="..\:/project/java/ReEnglish/app/src/main/res/layout/review.xml" value="0.1125" />
+        <entry key="..\:/project/java/ReEnglish/app/src/main/res/layout/zhongjianye.xml" value="0.2" />
+        <entry key="..\:/project/java/ReEnglish/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1965" />
+        <entry key="..\:/project/java/ReEnglish/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.144" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.1" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

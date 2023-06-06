@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Chart">
+<!--背景-->
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#DDEEFB" />
+<!--返回按钮-->
+    <!--回顾-->
+    <ImageView
+        android:id="@+id/chart_back"
+        android:layout_width="36dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.038"
+        app:srcCompat="?attr/actionModeCloseDrawable"
+        android:onClick="chart_back"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="360dp"
+        android:layout_height="200dp"
+        android:alpha="0.9"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="2dp"
+        android:background="@color/teal_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.136"
+        tools:ignore="MissingConstraints"
+        app:cardBackgroundColor="@color/gold"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="50dp"
+            app:cardCornerRadius="20dp"
+            android:onClick="review"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="回顾"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="50dp"
+            app:cardCornerRadius="20dp"
+            android:onClick="learn_chart"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预习"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                />
+        </androidx.cardview.widget.CardView>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView5"
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:alpha="0.9"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.46"
+        tools:ignore="MissingConstraints">
+        <!--最近学习-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20dp"
+            android:text="今日学习"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+        <!--展示学习数量-->
+        <TextView
+            android:id="@+id/show_word_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="20dp"
+            android:text="展示学习单词数量"
+            android:textColor="#5E5959"
+             />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="360dp"
+        android:layout_height="120dp"
+        android:alpha="0.9"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.64"
+        tools:ignore="MissingConstraints" >
+<!--已学习-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="已学习"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="30dp"
+        />
+        <!--展示学习数量-->
+        <TextView
+
+            android:id="@+id/learn_state_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="展示学习单词数量"
+            android:textColor="#5E5959"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="30dp"
+            />
+<!--待学习-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="待学习"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="80dp"
+        />
+        <!--展示学习数量-->
+        <TextView
+            android:id="@+id/learn_state_0"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="展示学习单词数量"
+            android:textColor="#5E5959"
+
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="80dp"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView6"
+        android:layout_width="360dp"
+        android:layout_height="180dp"
+        android:alpha="0.9"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.98"
+        tools:ignore="MissingConstraints">
+        <!--单词本-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="30dp"
+            android:text="累计学习"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+        <!--展示数量-->
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="30dp"
+            android:text="展示数量"
+            android:textColor="#5E5959" />
+        <!--单词本-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="80dp"
+            android:text="笔记"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+        <!--展示数量-->
+        <TextView
+            android:id="@+id/note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="80dp"
+            android:text="展示数量"
+            android:textColor="#5E5959"
+            />
+
+        <!--单词本-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="130dp"
+            android:text="收藏"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+
+        <!--展示数量-->
+        <TextView
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="130dp"
+            android:text="展示数量"
+            android:textColor="#5E5959"
+            />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
